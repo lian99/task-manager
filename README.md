@@ -65,6 +65,7 @@ npm install
 ```
 
 Create a `.env` file inside the `api` folder:
+
 DB_SERVER=localhost
 
 DB_DATABASE=TaskManagerDB
