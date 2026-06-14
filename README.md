@@ -154,7 +154,7 @@ task-manager/
 
 ## Assumptions & Design Decisions
 
-- **SQL Login:** A dedicated `taskmanager_user` was created following the least privilege principle — only has permissions it needs (EXECUTE, SELECT, INSERT, UPDATE, DELETE).
+- **SQL Login:** A dedicated `taskmanager_user` was created following the least privilege principle.only has permissions it needs (EXECUTE, SELECT, INSERT, UPDATE, DELETE).
 - **usp_RebalanceTasks:** Tasks are only moved to employees with fewer than 3 open tasks to prevent ping-ponging. A second run may resolve remaining imbalances if room becomes available.
 - **NearestDueTask:** Shows only future due dates for non-Done tasks. Employees with no upcoming tasks show NULL (displayed as — in the UI).
 - **CORS:** Enabled on the API to allow the React app on port 3000 to communicate with the API on port 3001.
